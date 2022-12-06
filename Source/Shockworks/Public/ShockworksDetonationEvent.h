@@ -10,7 +10,7 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(BlueprintType)
 class SHOCKWORKS_API UShockworksDetonationEvent : public UDataAsset
 {
 	GENERATED_BODY()
