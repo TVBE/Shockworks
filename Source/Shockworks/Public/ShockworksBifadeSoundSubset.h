@@ -11,7 +11,7 @@
  */
  
 USTRUCT(BlueprintType)
-struct FShockworksBifadeSoundSubset;
+struct FShockworksBifadeSoundSubset
 {
 	GENERATED_USTRUCT_BODY()
 
