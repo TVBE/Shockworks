@@ -18,14 +18,9 @@ class SHOCKWORKS_API UShockworksDetonationEvent : public UDataAsset
 public:
 
 	// Detonation type
-	/** The detonation type for this event. High explosives detonate at a rate greater than the speed of sound whereas low explosives deflagrate. */
+	/** The detonation type for this event. */
 	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = EventData)
 	TEnumAsByte <EShockworksDetonationType> DetonationType;
-
-	// Force
-	/** the force of the detonation. Higher values will cause the explosion to be louder and more aggresive. */
-	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = EventData, Meta = (ClampMin = "0.0", ClampMax = "100.0", UIMin = "0.0", UIMax = "100.0"))
-	float Force = 25.0;
 
 	// Shrapnel
 	/** the amount of shrapnel that this explosion generates. This setting will incur a slight performance cost at higher values. */
@@ -37,13 +32,8 @@ public:
 	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = EventData, Meta = (ClampMin = "0.0", ClampMax = "100.0", UIMin = "0.0", UIMax = "100.0"))
 	float Debris = 25.0;
 
-	// Tone
-	/** Alters the character of the event. Lower values will make the event more bottom heavy and drawn out, while higher values will make the event more harsh and spikey. Leave at 50 for default. */
-	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = Character, Meta = (ClampMin = "0.0", ClampMax = "100.0", UIMin = "0.0", UIMax = "100.0"))
-	float Tone = 50.0;
-
-	// Impact
-	/** Alters the impact of the event. Higher values will add more punch to the event. Leave at 50 for default. */
-	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = Character, Meta = (ClampMin = "0.0", ClampMax = "100.0", UIMin = "0.0", UIMax = "100.0"))
-	float Impact = 50.0;
+	// Shellshock
+	/** Defines the amount of shellshock effect that the listener should experience when within the radius of the explosion. */
+	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = Shellshock, Meta = (ClampMin = "0.0", ClampMax = "100.0", UIMin = "0.0", UIMax = "100.0"))
+	float Shellshock = 0.0;
 };
