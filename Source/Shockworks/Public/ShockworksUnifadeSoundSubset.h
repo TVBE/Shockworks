@@ -11,7 +11,7 @@
  */
 
 USTRUCT(BlueprintType)
-struct FShockworksUnifadeSoundSubset;
+struct FShockworksUnifadeSoundSubset{
 	GENERATED_USTRUCT_BODY()
 
 	// LayerA Files
