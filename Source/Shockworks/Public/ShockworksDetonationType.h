@@ -11,6 +11,6 @@
 UENUM(BlueprintType)
 enum EShockworksDetonationType
 {
-    Explosion       UMETA(DisplayName = "Explosion"),
-    Deflagration    UMETA(DisplayName = "Deflagration"),
+    Grenade01       UMETA(DisplayName = "Grenade01"),
+    
 };
