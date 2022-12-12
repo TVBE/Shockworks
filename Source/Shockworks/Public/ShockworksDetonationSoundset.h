@@ -3,13 +3,24 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "ShockworksDetonationType.h"
+#include "ShockworksSourceSoundSet.h"
+
+#include "ShockworksDetonationSoundset.generated.h"
 
 /**
  * 
  */
-class SHOCKWORKS_API ShockworksDetonationSoundset
+UCLASS(BlueprintType)
+class SHOCKWORKS_API UShockworksDetonationSoundset : public UDataAsset
 {
+	GENERATED_BODY()
+
 public:
-	ShockworksDetonationSoundset();
-	~ShockworksDetonationSoundset();
+
+	// Source Soundset
+	/** The detonation source soundset to use for this event. */
+	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = EventData)
+	FShockworksSourceSoundset Source = FShockworksSourceSoundset();
+
 };

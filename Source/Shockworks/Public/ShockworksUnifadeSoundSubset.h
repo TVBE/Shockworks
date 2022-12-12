@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Sound/SoundWave.h"
-#include "FShockworksUnifadeSoundSubset.generated.h"
+#include "ShockworksUnifadeSoundSubset.generated.h"
 
 /**
  *
