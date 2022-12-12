@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Engine/DataAsset.h"
-#include "ShockworksDetonationType.h"
+#include "ShockworksDetonationSoundset.h"
 #include "ShockworksDetonationEvent.generated.h"
 
 /**
@@ -20,7 +20,7 @@ public:
 	// Detonation type
 	/** The detonation type for this event. */
 	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = EventData)
-	TEnumAsByte <EShockworksDetonationType> DetonationType;
+	UShockworksDetonationSoundset* DetonationSoundset;
 
 	// Shrapnel
 	/** the amount of shrapnel that this explosion generates. This setting will incur a slight performance cost at higher values. */
