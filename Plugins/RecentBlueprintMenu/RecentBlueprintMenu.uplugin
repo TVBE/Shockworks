@@ -1,0 +1,28 @@
+{
+	"FileVersion": 3,
+	"Version": 101,
+	"VersionName": "1.01",
+	"FriendlyName": "Recent Blueprints Menu",
+	"Description": "A simple but time saving plugin that adds a \"Recent Blueprints\" menu to the blueprint editor. Giving you one click access to blueprints recently opened, and avoid having to constantly search for them.",
+	"Category": "Blueprint Editor",
+	"CreatedBy": "The Tool Shed",
+	"CreatedByURL": "https://unrealengine.com/marketplace/en-US/profile/The%20Tool%20Shed",
+	"DocsURL": "https://docs.google.com/presentation/d/10Gp1y-EPkBW8myvR-Lzd3viMDU5xovd0fSzJLOFm4NI/edit?usp=sharing",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/484f72297c144cf9b5c35fea3359500c",
+	"SupportURL": "https://forums.unrealengine.com/t/support-recent-blueprints-menu/532808",
+	"EngineVersion": "5.1.0",
+	"CanContainContent": false,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "RecentBlueprintMenu",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit",
+			"PlatformAllowList": [
+				"Win64",
+				"Mac",
+				"Linux"
+			]
+		}
+	]
+}

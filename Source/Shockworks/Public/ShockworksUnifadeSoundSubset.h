@@ -29,17 +29,22 @@ struct FShockworksUnifadeSoundSubset{
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = Soundset)
 	FVector2D FadeRange;
 
-	
+	// Volume
+	/** Defines the volume for this subset. */
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = Soundset)
+	float Volume;
 
 	/** Constructor with default values. */
 	FShockworksUnifadeSoundSubset()
 	{
 		FadeRange = FVector2d();
+		Volume = 1.0;
 	}
 
 	/** Constructor which allows us to set the fade ranges. */
 	FShockworksUnifadeSoundSubset(FVector2D const Range)
 	{
 		FadeRange = Range;
+		Volume = 1.0;
 	}
 };
