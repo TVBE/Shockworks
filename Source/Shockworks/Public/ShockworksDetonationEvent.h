@@ -19,7 +19,7 @@ public:
 
 	// Detonation type
 	/** The detonation type for this event. */
-	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = EventData)
+	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = Soundset)
 	UShockworksDetonationSoundset* DetonationSoundset;
 
 	// Shrapnel
