@@ -32,6 +32,10 @@
 		{
 			"Name": "Spatialization",
 			"Enabled": true
+		},
+		{
+			"Name": "ChaosVehiclesPlugin",
+			"Enabled": true
 		}
 	]
 }
