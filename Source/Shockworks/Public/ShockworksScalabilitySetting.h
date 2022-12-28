@@ -18,7 +18,7 @@ public:
 
 	// General ---------------------------------------------------------------------------------------------------------
 
-	/** Define the threshold for when Shockworks events will not try to play detail effects such as shrapnel and debris. */
+	/** Define the threshold for when Shockworks events will try to play detail effects such as shrapnel and debris. */
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = General)
 	float DetailEffectThreshold = 7500.0;
 
