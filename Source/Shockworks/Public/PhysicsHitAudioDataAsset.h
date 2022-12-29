@@ -10,7 +10,7 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(BlueprintType)
 class SHOCKWORKS_API UPhysicsHitAudioDataAsset : public UDataAsset
 {
 	GENERATED_BODY()
