@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright 2023 Nino Saglia & Tim Verberne
 
 #pragma once
 
@@ -6,9 +6,8 @@
 #include "Engine/DataAsset.h"
 #include "ShockworksScalabilitySetting.generated.h"
 
-/**
- * 
- */
+/** Data asset for storing scalability settings for the Shockworks subsystem. This allows users to create different configurations
+ *  for every target platform or quality setting. */
 UCLASS()
 class SHOCKWORKS_API UShockworksScalabilitySetting : public UDataAsset
 {

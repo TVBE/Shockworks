@@ -1,10 +1,10 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright 2023 Nino Saglia & Tim Verberne.
 
 
-#include "ShockworksEventActor.h"
+#include "EventActor.h"
 
 // Sets default values
-AShockworksEventActor::AShockworksEventActor()
+AEventActor::AShockworksEventActor()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
