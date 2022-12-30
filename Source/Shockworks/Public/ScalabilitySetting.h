@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Engine/DataAsset.h"
-#include "ShockworksScalabilitySetting.generated.h"
+#include "ScalabilitySetting.generated.h"
 
 /** Data asset for storing scalability settings for the Shockworks subsystem. This allows users to create different configurations
  *  for every target platform or quality setting. */

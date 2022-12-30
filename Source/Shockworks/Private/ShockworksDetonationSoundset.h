@@ -5,7 +5,6 @@
 #include "CoreMinimal.h"
 #include "Engine/DataAsset.h"
 #include "Sound/SoundWave.h"
-#include "Sound/SoundConcurrency.h"
 #include "ShockworksDetonationSoundset.generated.h"
 
 /**
@@ -95,9 +94,4 @@ public:
 	/** Defines the pitch shift to play layer B at. */
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = Distant, Meta = (DisplayName="Layer B Pitch", ClampMin = "-12.0", ClampMax = "12.0", UIMin = "-12.0", UIMax = "12.0"))
 	float DistantLayerBPitch = 0.0;
-
-	// Concurrency -----------------------------------------------------------------------------------------------------
-	/** Defines the concurrency asset to use for this soundset. Only applies to source. */
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = Concurrency)
-	USoundConcurrency* Concurrency;
 };

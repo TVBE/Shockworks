@@ -4,7 +4,7 @@
 #include "EventActor.h"
 
 // Sets default values
-AEventActor::AShockworksEventActor()
+AEventActor::AEventActor()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -12,14 +12,14 @@ AEventActor::AShockworksEventActor()
 }
 
 // Called when the game starts or when spawned
-void AShockworksEventActor::BeginPlay()
+void AEventActor::BeginPlay()
 {
 	Super::BeginPlay();
 	
 }
 
 // Called every frame
-void AShockworksEventActor::Tick(float DeltaTime)
+void AEventActor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
