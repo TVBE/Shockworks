@@ -8,7 +8,7 @@
 
 /** Data asset for storing scalability settings for the Shockworks subsystem. This allows users to create different configurations
  *  for every target platform or quality setting. */
-UCLASS()
+UCLASS(BlueprintType)
 class SHOCKWORKS_API UShockworksScalabilitySetting : public UDataAsset
 {
 	GENERATED_BODY()

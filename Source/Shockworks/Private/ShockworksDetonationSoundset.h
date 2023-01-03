@@ -16,9 +16,7 @@ class UShockworksDetonationSoundset : public UDataAsset
 	GENERATED_BODY()
 
 public:
-
-	// Close -----------------------------------------------------------------------------------------------------------
-
+	
 	/** Layer A WaveFiles. */
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = Close, Meta = (DisplayName="Layer A"))
 	TArray<USoundWave*> CloseLayerAWaveFiles;
@@ -42,9 +40,7 @@ public:
 	/** Defines the pitch shift to play layer B at. */
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = Close, Meta = (DisplayName="Layer B Pitch", ClampMin = "-12.0", ClampMax = "12.0", UIMin = "-12.0", UIMax = "12.0"))
 	float CloseLayerBPitch = 0.0;
-
-	// Medium ----------------------------------------------------------------------------------------------------------
-
+	
 	/** Layer A WaveFiles. */
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = Medium, Meta = (DisplayName="Layer A"))
 	TArray<USoundWave*> MediumLayerAWaveFiles;
@@ -68,9 +64,7 @@ public:
 	/** Defines the pitch shift to play layer B at. */
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = Medium, Meta = (DisplayName="Layer B Pitch", ClampMin = "-12.0", ClampMax = "12.0", UIMin = "-12.0", UIMax = "12.0"))
 	float MediumLayerBPitch = 0.0;
-
-	// Distant ---------------------------------------------------------------------------------------------------------
-
+	
 	/** Layer A WaveFiles. */
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = Distant, Meta = (DisplayName="Layer A"))
 	TArray<USoundWave*> DistantLayerAWaveFiles;
