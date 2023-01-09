@@ -2,10 +2,9 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
-#include "Engine/DataAsset.h"
-#include "ShockworksDetonationSoundset.h"
 #include "ShockworksDetonationEvent.generated.h"
+
+
 
 /**
  * 
@@ -19,8 +18,8 @@ public:
 
 	// Detonation type
 	/** The detonation type for this event. */
-	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = Soundset)
-	UShockworksDetonationSoundset* DetonationSoundset;
+	// UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = Soundset)
+	// UShockworksDetonationSoundset* DetonationSoundset;
 
 	// Shrapnel
 	/** the amount of shrapnel that this explosion generates. This setting will incur a slight performance cost at higher values. */
